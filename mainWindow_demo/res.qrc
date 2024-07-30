@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file alias="yuanyuan">C:/Users/86177/Desktop/image/组织起.jpg</file>
+        <file>image/组织起.jpg</file>
+        <file>image/yuanyuan.jpg</file>
+    </qresource>
+</RCC>
