@@ -83,9 +83,9 @@ MainWindow::MainWindow(QWidget *parent)
 //    QPixmap *pix=new QPixmap("/yuanyuan");
 //    action1->setIcon(pix);
 
-//    QPixmap pix;
-//    pix.load(":/image/yuanyuan.jpg");
-//    action1->setIcon(QIcon(pix));
+    QPixmap pix;
+    pix.load(":/image/yuanyuan.jpg");
+    action1->setIcon(QIcon(pix));
 
 
 }
@@ -93,4 +93,5 @@ MainWindow::MainWindow(QWidget *parent)
 MainWindow::~MainWindow()
 {
 }
+
 

@@ -17,23 +17,24 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     form.cpp \
+    form1.cpp \
+    form3.cpp \
     main.cpp \
-    mainwindow.cpp
+    widget.cpp
 
 HEADERS += \
     form.h \
-    mainwindow.h
+    form1.h \
+    form3.h \
+    widget.h
+
+FORMS += \
+    form.ui \
+    form1.ui \
+    form3.ui \
+    widget.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
-
-RESOURCES += \
-    pictu.qrc
-
-FORMS += \
-    form.ui
-
-
-

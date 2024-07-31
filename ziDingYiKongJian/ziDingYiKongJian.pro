@@ -16,24 +16,19 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    form.cpp \
     main.cpp \
-    mainwindow.cpp
+    userdefine.cpp \
+    widget.cpp
 
 HEADERS += \
-    form.h \
-    mainwindow.h
+    userdefine.h \
+    widget.h
+
+FORMS += \
+    userdefine.ui \
+    widget.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
-
-RESOURCES += \
-    pictu.qrc
-
-FORMS += \
-    form.ui
-
-
-
